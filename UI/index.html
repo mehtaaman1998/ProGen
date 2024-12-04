@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Student Portal</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ProGen</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    
+    <!-- Home Section -->
+<section id="home" class="home">
+    <!-- Background Video -->
+    <video id="background-video" autoplay muted></video>
+  
+    <!-- Overlay Content -->
+    <div class="overlay">
+        <h1>Welcome to ProGen</h1>
+        <p>Your one-stop solution for AI-driven digital services and learning.</p>
+        <div class="cards">
+            <div class="card" onclick="openModal('Digital Marketing')">
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence.</p>
+            </div>
+            <div class="card" onclick="openModal('Software Development')">
+                <h3>Software Development</h3>
+                <p>We build futuristic software.</p>
+            </div>
+            <div class="card" onclick="openModal('Prompt Engineering')">
+                <h3>Prompt Engineering</h3>
+                <p>Master AI-powered prompt design.</p>
+            </div>
+            <div class="card" onclick="openModal('Courses')">
+                <h3>Courses</h3>
+                <p>Learn with our expert-guided courses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Information -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+    
+    
+    
+
+    <!-- About Us Section -->
+    <!-- About Us Section -->
+<section id="about-us" class="about-us">
+    <div class="content">
+        <h2>About Us</h2>
+        <p>Welcome to ProGen, a company dedicated to revolutionizing the way we think about technology, AI, and digital innovation. Our team of visionaries works tirelessly to bring forward-thinking solutions to your digital transformation journey.</p>
+        <div class="vision">
+            <h3>Our Vision</h3>
+            <p>To empower individuals and businesses with cutting-edge AI technologies, enabling them to create innovative solutions and achieve remarkable growth.</p>
+        </div>
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>We aim to bridge the gap between the present and the future by offering AI-driven solutions that fuel productivity, creativity, and innovation across various industries.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-cards">
+            <div class="product-card" onclick="openProductDetail('AI Assistant')">
+                <img src="https://via.placeholder.com/150" alt="AI Assistant">
+                <p>AI Assistant</p>
+            </div>
+            <div class="product-card" onclick="openProductDetail('Smart Learning App')">
+                <img src="https://via.placeholder.com/150" alt="Smart Learning App">
+                <p>Smart Learning App</p>
+            </div>
+            <div class="product-card" onclick="openProductDetail('Marketing Automation')">
+                <img src="https://via.placeholder.com/150" alt="Marketing Automation">
+                <p>Marketing Automation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+   <!-- New Scroll Container -->
+   <section id="blogs" class="blogs">
+    <h2>Latest AI News</h2>
+    <div class="scroll-container">
+        <button class="scroll-button left" onclick="scrollLeft()">&#9664;</button> <!-- Left button -->
+        <div class="blog-cards" id="blog-cards">
+            <!-- Dynamic news articles will be injected here -->
+        </div>
+        <button class="scroll-button right" onclick="scrollRight()">&#9654;</button> <!-- Right button -->
+    </div>
+</section>
+
+
+
+    <!-- Contact Us Section -->
+    <!-- Contact Us Section -->
+<section id="contact-us" class="contact-us">
+    <h2>Contact Us</h2>
+    <div class="iframe-container">
+        <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__dclu6pURTYyWjhHTkk5VDJWNVRCRzNPSENXNUUzMC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width: 100%; max-height: 100vh;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 ProGen. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
